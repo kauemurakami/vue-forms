@@ -42,13 +42,13 @@
 			
 			<form>
 				<label for="fname">Nome:</label><br>
-				<input type="text" id="fname" name="fname"><br>
+				<input type="text" id="fname" name="fname" v-model="newMember.fname"><br>
 
 				<label for="lname">Sobrenome:</label><br>
-				<input type="text" id="lname" name="lname"><br>
+				<input type="text" id="lname" name="lname" v-model="newMember.lname"><br>
 
 				<label for="instrument">Instrumento:</label><br>
-				<select name="instrument" id="instrument">
+				<select name="instrument" id="instrument" v-model="newMember.instrument">
 					<option value="Baixo">Baixo</option>
 					<option value="Guitarra">Guitarra</option>
 					<option value="Violão">Violão</option>
@@ -61,7 +61,7 @@
 		</section>
 
 	</main>
-	<script src="https://unpkg.com/vue@next"></script>
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 	<script src="scripts.js"></script>
 </body>
 
