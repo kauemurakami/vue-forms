@@ -16,13 +16,15 @@ const handlingForms = {
 	data() {
 		return {
 			members: window.members,
-			newMember: {
-				fname: null,
-				lname: null,
-				instrument: null,
-			}
+			newMember: { } //com v-model ele cria as propriedades
 		}
 	},
+	methods:{
+		addMember : function(){
+			this.members.push(this.newMember)
+			this.newMember = {}
+		}
+	}
 
 };
 
